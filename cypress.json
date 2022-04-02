@@ -1,0 +1,6 @@
+{
+    "baseUrl": "https://www.saucedemo.com",
+    "chromeWebSecurity": false,
+    "experimentalSessionSupport": true,
+    "reporter": "cypress-mochawesome-reporter"
+}

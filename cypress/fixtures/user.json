@@ -1,0 +1,11 @@
+{
+  "username":"standard_user",
+  "invalidusername":"invalidusername",
+  "password":"secret_sauce",
+  "firstName": "Rojal",
+  "lastName": "Bati",
+  "postalCode": "977",
+  "completedText": "Your order has been dispatched, and will arrive just as fast as the pony can get there!",
+  "inventory_item_name": "Sauce Labs Backpack",
+  "errorText": "Epic sadface: Username and password do not match any user in this service"
+}
