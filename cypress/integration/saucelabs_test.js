@@ -39,6 +39,12 @@ describe('Sauce Labs Test: Add to Cart, Filter, Checkout', function () {
         cy.get('.inventory_item_name').should('have.text', 'Sauce Labs Backpack') // Verify the item is added to the cart
     })
 
+    it('Verify the Standard_user can add items to the card Again', function () {
+        cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click()
+        cy.get('.shopping_cart_link').click()
+        cy.get('.inventory_item_name').should('have.text', 'Sauce Labs Backpack') // Verify the item is added to the cart
+    })
+
     it('Verify the Standard_user user can filter the products', function () {
         cy.get('.product_sort_container').select('Price (low to high)');
         cy.verifyPriceLowToHigh()
