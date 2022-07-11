@@ -21,7 +21,7 @@ describe('Sauce Labs Test: Login', function () {
 
 })
 
-describe('Sauce Labs Test: Add to Cart, Filter, Checkout', function () {
+describe('Sauce Labs Test: Add to Cart st xaviers, Filter, Checkout', function () {
 
     beforeEach(function () {
         cy.fixture('user').then(function (data) {
