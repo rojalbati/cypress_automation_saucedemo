@@ -21,7 +21,7 @@ describe('Sauce Labs Test: Login', function () {
 
 })
 
-describe('Sauce Labs Test: Add to Cart, Filter, Checkout', function () {
+describe('Sauce Labs Test: Add to Cart st xaviers, Filter, Checkout', function () {
 
     beforeEach(function () {
         cy.fixture('user').then(function (data) {
@@ -34,6 +34,12 @@ describe('Sauce Labs Test: Add to Cart, Filter, Checkout', function () {
     })
 
     it('Verify the Standard_user can add items to the card', function () {
+        cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click()
+        cy.get('.shopping_cart_link').click()
+        cy.get('.inventory_item_name').should('have.text', 'Sauce Labs Backpack') // Verify the item is added to the cart
+    })
+
+    it('Verify the Standard_user can add items to the card Again', function () {
         cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click()
         cy.get('.shopping_cart_link').click()
         cy.get('.inventory_item_name').should('have.text', 'Sauce Labs Backpack') // Verify the item is added to the cart
